@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyAppLayoutInflater_List</string>
+    <string name="textviewtitle2">Заголовок</string>
+    <string name="textviewTitle1">название блюда</string>
+    <string name="textviewString">Краткое описание блюда и его рецептура. И какой то текст.Новый текст, просто текст ровышгртлотлопав лавопваоп валпорвлпо рлвао.</string>
+    <string name="textviewString2">Лишь независимые государства, инициированные исключительно синтетически, ограничены исключительно образом мышления. Ясность нашей позиции очевидна: дальнейшее развитие различных форм деятельности однозначно фиксирует.</string>
+    <string name="testText1">тексттест1</string>
+    <string name="image_one">картинка_1</string>
+    <string name="five_minutes">5 мин.</string>
+    <string name="textview">textView</string>
+    <string name="textview_3">TextView_3</string>
+    <string name="texttest">TextTest</string>
+</resources>
