@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 			tvSalary.setText(String.valueOf(salary[i]));
 
 			ImageView ivImages = (ImageView) item.findViewById(R.id.ivImages);
-			ivImages.setImageBitmap(ImageView);
+			ivImages.setImageBitmap(ImageView.inflate());
 
 
 
