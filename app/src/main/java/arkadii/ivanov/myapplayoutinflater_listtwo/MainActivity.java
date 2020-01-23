@@ -5,9 +5,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.annotation.DrawableRes;
 import androidx.appcompat.app.AppCompatActivity;
 //import androidx.recyclerview.widget.RecyclerView.Adapter;
 
@@ -20,13 +22,27 @@ public class MainActivity extends AppCompatActivity {
 	private String[] position = {"Новое описание пока похоже на рыба текст. Но скоро будет настоящее описание.", "новое один? Новое описание пока похоже на рыба текст. Но скоро будет настоящее описание", "новое два", "новое три", "новое чтыре", "новое пять", "новое шесть", "новое семь", "новое восемь", "нвое девять", "новое десять", "новое одинадцать", "новое двенадцать", "новое тринадцать", "новое четырнадцать", "новое пятнадцать",};
 
 	//Определяем масив типа int. И картинки которые мы выводим в список.
-	int[] Images = {R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4, R.drawable.img6, R.drawable.img7};
+	private int[] images = {R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4, R.drawable.img6, R.drawable.img7};
 
-	int[] minutes = {5, 12,20,12,5,35,23,7, 85, 19, 10, 101, 12, 13, 14,};
+	private int[] minutes = {5, 12,20,12,5,35,23,7, 85, 19, 10, 101, 12, 13, 14,};
 
-	int[] salary = {12, 22, 30, 14, 50, 346, 7, 85, 19, 10, 101, 12, 13, 14, 15};
+	private int[] salary = {12, 22, 30, 14, 50, 346, 7, 85, 19, 10, 101, 12, 13, 14, 15};
 
-	int[] colors = new int[2];
+	private int[] colors = new int[2];
+
+
+	//Определяем масив типа int. И картинки которые мы выводим в список.
+
+	int[] images = {R.drawable.img1,
+			R.drawable.img2,
+			R.drawable.img3,
+			R.drawable.img4,
+			R.drawable.img6,
+			R.drawable.img7
+
+			//image.setImageResource(images[0]);
+	};
+
 
 	//Создаем свой Adapter.
 	//private NewAdapter mAdapter;
@@ -71,6 +87,11 @@ public class MainActivity extends AppCompatActivity {
 
 			TextView tvSalary = (TextView) item.findViewById(R.id.tvSalary);
 			tvSalary.setText(String.valueOf(salary[i]));
+
+			ImageView ivImages = (TextView) item.findViewById(R.id.ivImages);
+			ivImages.setImageBitmap();
+
+
 
 			item.getLayoutParams().width = LinearLayout.LayoutParams.MATCH_PARENT;
 			item.setBackgroundColor(colors[i % 2]);
