@@ -88,8 +88,8 @@ public class MainActivity extends AppCompatActivity {
 			TextView tvSalary = (TextView) item.findViewById(R.id.tvSalary);
 			tvSalary.setText(String.valueOf(salary[i]));
 
-			ImageView ivImages = (TextView) item.findViewById(R.id.ivImages);
-			ivImages.setImageBitmap();
+			ImageView ivImages = (ImageView) item.findViewById(R.id.ivImages);
+			ivImages.setImageBitmap(ImageView);
 
 
 
