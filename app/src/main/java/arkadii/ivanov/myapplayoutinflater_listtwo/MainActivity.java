@@ -5,8 +5,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.annotation.DrawableRes;
@@ -68,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 		colors[1] = Color.parseColor("#ECECEC");
 
 
-		LinearLayout linLayout = (LinearLayout) findViewById(R.id.linLayout);
+		/**LinearLayout linLayout = (LinearLayout) findViewById(R.id.linLayout);
 
 		LayoutInflater ItInflater = getLayoutInflater();
 
@@ -89,16 +92,20 @@ public class MainActivity extends AppCompatActivity {
 			tvSalary.setText(String.valueOf(salary[i]));
 
 			ImageView ivImages = (ImageView) item.findViewById(R.id.ivImages);
-			ivImages.setImageBitmap(ImageView.inflate());
+			ivImages.setImageResource(images);
 
 
 
 			item.getLayoutParams().width = LinearLayout.LayoutParams.MATCH_PARENT;
 			item.setBackgroundColor(colors[i % 2]);
 			linLayout.addView(item);
+**/
 
+
+		ScrollView scrollView = (ScrollView)findViewById(R.id.scroll);
 		}
 
+Class CustomAdapter extends BaseAdapter{
 
 	}
 
